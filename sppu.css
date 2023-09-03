@@ -272,6 +272,7 @@
     font-weight: 600;
     
 }
+#sppuHead{font-size: 1.7rem;}
 #sppuHead2{
     font-size: 1.1em;line-height: 20px;
 }
@@ -312,7 +313,7 @@ thead{
     text-align: justify;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     .main-container{
         padding: 15px;
     }
