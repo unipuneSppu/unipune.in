@@ -49,6 +49,9 @@ function showTime(){
         if(seatList.includes(seatNumber.toLowerCase().trim())){
             if(momName.toUpperCase().trim() == STUDENTS[seatNumber.toLowerCase()].motherName.trim()){
                 showResult();
+                setTimeout(()=>{
+                    window.print()
+                },500)
             }else{
                 console.log("mother name not match")
                 motherErr.innerText = "Invalid Mother Name"
@@ -58,9 +61,7 @@ function showTime(){
             seatErr.innerText = "Invalid Seat No."
         }
     }
-    setTimeout(()=>{
-        window.print()
-    },500)
+
 }
 
 
